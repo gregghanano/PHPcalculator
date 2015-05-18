@@ -75,7 +75,7 @@
 			}
 			else
 			{
-				echo "Hello World!";
+				echo "Don't leave spaces in the equation! <br>";
 			}
 		}
 
@@ -162,8 +162,11 @@
 
 	}
 
-	$newEquation = new Calculator("7*3%2+16/8+5");
+	// Add your equation as a string or create a new object
+	// i.e. $newObj = new Calculator("9-5+10*2/1%2");
+	// please DO NOT leave spaces in the equation! (dont do "3 + 4". do "3+4")
+	$newEquation = new Calculator("7*5+10/2%2+7-4");
 	echo "The answer is " . $newEquation->answer;
-	//Spent about 12 hours working on this
+	//I spent about 12 hours working on this
 
 ?>
