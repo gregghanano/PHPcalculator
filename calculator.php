@@ -10,12 +10,12 @@
 		public $addition = false;
 		public $subtraction = false;
 
-		// Initial function runs when instance of class is created
 		public function __construct($equation)
+		// Initial function runs when instance of class is created
 		{
 			// split string equation into array
-			//used this link to understand regex
-			//http://forums.phpfreaks.com/topic/238685-regex-to-break-apart-math-equations/
+			// used this link to understand regex:
+			// http://forums.phpfreaks.com/topic/238685-regex-to-break-apart-math-equations/
 			$pattern = "/[^\d.]|[\d.]++/";
 			preg_match_all($pattern, $equation, $array);
 			$this->split = $array[0];
