@@ -13,6 +13,7 @@
 		public function __construct($equation)
 		// Initial function runs when instance of class is created
 		{
+			echo "The submitted equation is " . $equation . "<br>";
 			// split string equation into array
 			// used this link to understand regex:
 			// http://forums.phpfreaks.com/topic/238685-regex-to-break-apart-math-equations/
